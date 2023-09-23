@@ -5,7 +5,7 @@ document.body.appendChild(newParagraph);
 //add an image
 const newImage = document.createElement("img");
 newImage.setAttribute("src", "https://picsum.photos/id/58/200/300");
-newImage.setAttribute("alt", "Description of image");
+newImage.setAttribute("alt", "lighthouse image");
 document.body.appendChild(newImage);
 
 //complex html example
