@@ -28,12 +28,14 @@ nameElement.innerHTML = `<strong>${fullName}</strong>`;
 
 /* Step 5 - Array */
 
-let favoriteFoods = ['pasta', 'salad', 'shrimp'];
+let favoriteFoods = ['pasta', 'salad', 'shrimp', 'chocolate', 'strawberries'];
 foodElement.textContent = favoriteFoods.join(', ');
 let newFav = 'spinach';
 favoriteFoods.push(newFav);
 foodElement.innerHTML += `<br>${favoriteFoods.join(', ')}`;
 favoriteFoods = favoriteFoods.slice(1,);
+foodElement.innerHTML += `<br>${favoriteFoods.join(', ')}`;
+favoriteFoods.pop();
 foodElement.innerHTML += `<br>${favoriteFoods.join(', ')}`;
 
 
