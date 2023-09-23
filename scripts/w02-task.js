@@ -25,9 +25,6 @@ document.querySelector("img").setAttribute("alt", "Annmarie SanSevero");
 
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
 
-//profilePicture.setAttribute('src', profilePicture);
-//profilePicture.setAttribute('alt', `Profile Image of ${fullName};`)
-//yearElement.textContent = currentYear;
 
 /* Step 5 - Array */
 
