@@ -28,3 +28,19 @@ let pointTotal = gpaPoints.reduce(function (total, item) {
 })
 
 let gpa = pointTotal / gpaPoints.length;
+
+//Activity 4 -- confused on this one. 
+let foods = ['watermelon', 'peach', 'apple', 'tomato', 'grape'];
+
+function longFoods (food) {
+    return foods.filter(foods.length > 6);
+}
+
+console.log(longFoods);
+
+//Activity 5
+let nums = [12, 34, 21, 54];
+let luckNumber = 21;
+
+console.log(nums.indexOf(luckNumber));
+
