@@ -1,10 +1,8 @@
 //Activity 1
-let arrayOne = ['one', 'two', 'three'];
-let arrayOneHtml = arrayOne.map(function (arr1) {
-    return `<li>${arr1}</li>`;
-});
+// const steps = ["one", "two", "three"];
+// const stepsHtml = steps.map(step => `<li>${step}</li>`);
 
-document.getElementById("myList").innerHTML = arrayOneHtml.join();
+// document.getElementById("myList").innerHTML = stepsHtml.join();
 
 //Activity 2
 let grades = ['A', 'B', 'A'];
@@ -17,10 +15,11 @@ function gradePoints(grade) {
         points = 3;
     }
     return points;
-}
+    }
+
 
 let gpaPoints = grades.map(gradePoints);
-console.log(gpaPoints);
+
 
 //Activity 3
 let pointTotal = gpaPoints.reduce(function (total, item) {
@@ -28,15 +27,17 @@ let pointTotal = gpaPoints.reduce(function (total, item) {
 })
 
 let gpa = pointTotal / gpaPoints.length;
+console.log(gpa);
 
-//Activity 4 -- confused on this one. 
+//Activity 4 
 let foods = ['watermelon', 'peach', 'apple', 'tomato', 'grape'];
 
-function longFoods (food) {
-    return foods.filter(foods.length > 6);
+function longFoods () {
+    return foods.filter(food => food.length > 6);
 }
+let food = longFoods();
 
-console.log(longFoods);
+console.log(food);
 
 //Activity 5
 let nums = [12, 34, 21, 54];
