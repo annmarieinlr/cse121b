@@ -42,23 +42,43 @@ let multiplyNumbers = () => {
 document.querySelector("#multiplyNumbers").addEventListener("click", multiplyNumbers);
 
 /* Open Function Use - Divide Numbers */
+let divide = (number1, number2) => number1 / number2;
 
+let divideNumbers = () => {
+    let divideNumbers1 = Number(document.querySelector("#dividend").value);
+    let divideNumbers2 = Number(document.querySelector("#divisor").value);
+    document.querySelector("#quotient").value = divide(divideNumbers1, divideNumbers2);
+
+}
+
+document.querySelector("#divideNumbers").addEventListener("click", divideNumbers);
 
 /* Decision Structure */
+let date = new Date().getDate();
+currentYear = date.getFullYear();
+document.querySelector("year").innerHTML = currentYear;
 
 
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
-let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 document.getElementById('array').innerHTML = myArray;
 /* Output Odds Only Array */
 let odds = myArray.filter(x => x % 2 != 0);
-document.querySelector("#odd").innerHTML = odds;
+document.querySelector("#odds").innerHTML = odds;
 
 /* Output Evens Only Array */
+let even = myArray.filter(x => x % 2 === 0);
+document.querySelector("#evens").innerHTML = even;
 
 /* Output Sum of Org. Array */
+let sumArray = myArray.reduce((sum, item) => sum + item);
+document.querySelector("#sumOfArray").innerHTML = sumArray;
 
 /* Output Multiplied by 2 Array */
+let double = myArray.map(x => x * 2);
+document.querySelector("#multiplied").innerHTML = double;
 
 /* Output Sum of Multiplied by 2 Array */
+let productArray = double.reduce((sum, item) => sum + item);
+document.querySelector("#sumOfMultiplied").innerHTML = productArray;
