@@ -18,18 +18,18 @@ const aCourse = {
 
     //Activity 2
     enrollStudent: function(sectionNum) {
-        let sectionIndex = this.sections.findIndex((section) => section.sectionNum == sectionNum);
+        let sectionIndex = this.section.findIndex((section) => section.sectionNum == sectionNum);
         if (sectionIndex >= 0){
-            this.sections[sectionIndex].enrolled++;
-            outputSections(this.sections);
+            this.section[sectionIndex].enrolled++;
+            outputSections(this.section);
         }
     }, 
 
     dropStudent: function(sectionNum) {
-        let sectionIndex = this.sections.findIndex((section) => section.sectionNum == sectionNum);
+        let sectionIndex = this.section.findIndex((section) => section.sectionNum == sectionNum);
         if (sectionIndex >= 0) {
-            this.sections[sectionIndex].enrolled--;
-            outputSections(this.sections);
+            this.section[sectionIndex].enrolled--;
+            outputSections(this.section);
         }
     }
 }

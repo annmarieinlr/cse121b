@@ -12,7 +12,7 @@ let profilePicture = 'images/headshot.jpg'
 
 let nameElement = document.getElementById('name');
 let foodElement = document.getElementById('food');
-let yearElement = document.querySelector('year');
+let yearElement = document.querySelector('#year');
 profilePicture = document.querySelector("img").src = profilePicture;
 document.querySelector("img").setAttribute("alt", "Profile image of Annmarie SanSevero");
 
