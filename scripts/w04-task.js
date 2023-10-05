@@ -36,7 +36,7 @@ document.querySelector("#name").textContent = myProfile.name;
 document.querySelector('#photo').src = myProfile.photo;
 
 //document.querySelector("img").src = myProfile.photo;
-document.querySelector("img").setAttribute("alt", "Profile image of Annmarie SanSevero");
+document.querySelector("#photo").setAttribute("alt", "Profile image of Annmarie SanSevero");
 
 
 /* Favorite Foods List*/
