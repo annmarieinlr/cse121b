@@ -4,7 +4,7 @@
 
 let myProfile = {
     name: "Annmarie SanSevero",
-    photo: "/images/headshot.jpg",
+    photo: "images/headshot.jpg",
     favoriteFoods: ['pasta', 'salad', 'strawberries', 'meatballs', 'chocolate'],
     hobbies: ['violin', 'tap dancing', 'singing', 'trying not to die'],
     placesLived: []
@@ -34,6 +34,10 @@ document.querySelector("#name").textContent = myProfile.name;
 
 /* Photo with attributes */
 document.querySelector('#photo').src = myProfile.photo;
+
+//document.querySelector("img").src = myProfile.photo;
+document.querySelector("img").setAttribute("alt", "Profile image of Annmarie SanSevero");
+
 
 /* Favorite Foods List*/
 myProfile.favoriteFoods.forEach(food => {
