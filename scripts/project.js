@@ -12,4 +12,31 @@ User inputs the text. When the check me button is chosen, the input will be comp
 */
 
 
-let articleNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+//let articleNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+
+var numArticles = document.querySelectorAll(".aof").length; 
+
+for (var i= 0; i < numArticles; i++ ) {
+    document.querySelectorAll(".aof")[i].addEventListener("click", articleClick);
+
+}
+
+function articleClick() {
+    alert("I've been clicked!")
+   
+}
+
+document.addEventListener("click", function(e) {
+
+    var img = document.createElement("img");
+    img.src = "/images/article" + e.this + ".png";
+    var src = document.getElementById("article");
+    src.appendChild(img);
+});
+
+
+/*
+
+
+
+*/
