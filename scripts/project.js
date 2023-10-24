@@ -1,4 +1,4 @@
-import articles from "../aof.js";
+//import articles from "../aof.js";
 
 // function test(articleNumber) {
 //     switch (articleNumber) {
@@ -27,8 +27,13 @@ for (var i= 0; i < numArticles; i++ ) {
 function articleClick() {
     alert("clicked");
 
-    //get the id of the image clicked
-    let elementId = e.target.id;
+   // Create event listener
+    document.addEventListener('click', (e) =>
+    {
+  // Retrieve id from clicked element
+        let elementId = e.target.id;
+}
+);
 
     // add image using the id
     var img = document.createElement("img");
@@ -44,11 +49,11 @@ function articleClick() {
 
 /* async getArticles Function using fetch()*/
 
-const getArticles = async () => {
-    //In the function, declare a const variable named response that awaits the built-in fetch method calling the temple data, absolute URL given in Step 2 above
-    const response = await fetch("articles-of-faith.json");
-    let articleList = await response.json();
-    console.log(articleList);
+// const getArticles = async () => {
+//     //In the function, declare a const variable named response that awaits the built-in fetch method calling the temple data, absolute URL given in Step 2 above
+//     const response = await fetch("articles-of-faith.json");
+//     let articleList = await response.json();
+//     console.log(articleList);
 
-}
-articles.init();
+//}
+//articles.init();
