@@ -36,11 +36,11 @@ function articleClick() {
 );
 
     // add image using the id
-    var img = document.createElement("img");
+    /*var img = document.createElement("img");
     img.src = `/images/${elementId}.png`;
     var src = document.getElementById("verse");
     src.appendChild(img);
-
+*/
     
 
     
