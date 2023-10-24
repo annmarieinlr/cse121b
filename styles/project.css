@@ -13,7 +13,10 @@ body {
 
   .aof {
     margin: 10px;
+    visibility: visible;
   }
+
+ 
   
   footer {
     color: #DBEDF3;
