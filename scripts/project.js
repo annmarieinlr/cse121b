@@ -33,7 +33,7 @@ function articleClick(e) {
         img.src = `/images/article${elementId}.png`;
         var src = document.getElementById("verse");
         src.appendChild(img);
-        //listening for the test input
+        return elementId;
     
 
 };
