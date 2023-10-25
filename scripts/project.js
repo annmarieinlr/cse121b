@@ -17,8 +17,6 @@ document.getElementById('test-button').addEventListener('click', testArticle)
 
 function testArticle() {
     var userAnswer = document.getElementById("articleInput");
-    userAnswer.trim();
-    alert(userAnswer);
     test(selectedArticle, userAnswer.value)
 }
 
