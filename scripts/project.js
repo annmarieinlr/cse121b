@@ -30,7 +30,7 @@ function articleClick(e) {
         selectedArticle = elementId;
         // add image using the id
         var img = document.createElement("img");
-        img.src = `images/article${elementId}.png`;
+        img.src = `https://github.com/annmarieinlr/cse121b/blob/8f063940c0324c805678ebda9e179f3b1897d2e9/images/article${elementId}.png?raw=true`;
         var src = document.getElementById("verse");
         src.appendChild(img);
         return elementId;
