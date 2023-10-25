@@ -39,4 +39,4 @@ function articleClick(e) {
 };
 
 
-test(elementId);
+test();
